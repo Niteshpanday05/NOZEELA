@@ -8,8 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@wix/sdk": "^1.18.0",
-    "@wix/stores": "^1.0.600",
+    "@wix/data": "^1.0.373",
+    "@wix/sdk": "^1.21.2",
+    "@wix/stores": "^1.0.622",
     "js-cookie": "^3.0.5",
     "next": "16.0.10",
     "react": "19.2.1",
