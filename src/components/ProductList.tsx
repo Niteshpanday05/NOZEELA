@@ -6,19 +6,21 @@ import { products } from "@wix/stores";
 const PRODUCT_PER_PAGE = 20;
 
 type Props = {
-  category?: string; // Custom field for category filtering
+  categoryId?: string; // Custom field for category filtering
   limit?: number;
 };
 
-const ProductList = async ({ category, limit }: Props) => {
+const ProductList = async ({ categoryId, limit }: Props) => {
   const wixClient = await wixClientServer();
 
   // ✅ Query products
   let query = wixClient.products.queryProducts().limit(limit ?? PRODUCT_PER_PAGE);
 
   // ✅ Filter by category custom field if provided
-  if (category) {
-    query = query.eq("customFields.category", category);
+  if (categoryId) {
+    query = query.
+    eq("collectionIds", categoryId);
+
   }
 
   const res = await query.find();
@@ -34,7 +36,7 @@ const ProductList = async ({ category, limit }: Props) => {
           <div className="relative w-full h-80">
             <Image
               src={product.media?.mainMedia?.image?.url || "/placeholder.png"}
-              alt={product.name}
+              alt={product.name || "default"}
               fill
               sizes="25vw"
               className="object-cover rounded-md"
