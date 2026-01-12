@@ -21,7 +21,7 @@ export default function ContactPage() {
 
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-500/20 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-sky-600 blur-3xl" />
         <div className="relative max-w-6xl mx-auto px-6 py-20 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
