@@ -17,15 +17,15 @@ const SinglePage = () => {
           hello this is the best product made from wool and imported fron
           america. desined by victoriai and manufactured in australia
         </p>
-        <div className="h-[2px] bg-gray-100" />
+        <div className="h-0.5 bg-gray-100" />
         <div className="flex items-center gap-4">
           <h3 className="text-xl text-gray-500 line-through">$59</h3>
           <h2 className=" font-medium text-2xl">$39</h2>
         </div>
-        <div className="h-[2px] bg-gray-100" />
+        <div className="h-0.5 bg-gray-100" />
         <CustomizeProducts />
         <Add />
-        <div className="h-[2px] bg-gray-100" />
+        <div className="h-0.5 bg-gray-100" />
         <div className="text-sm">
           <h4 className="font-medium mb-4 ">Title</h4>
           <p>

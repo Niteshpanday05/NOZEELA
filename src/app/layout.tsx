@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <WixClienContextProvider>
           <Navbar />
-          <main className="px-2 lg:px-6 max-w-auto mx-auto">
+          <main className="px-2 lg:px-4 max-w-auto mx-auto">
             {children}
           </main>
           <Footer />
