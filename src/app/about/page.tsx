@@ -1,13 +1,14 @@
 // pages/about.tsx
 import ProductList from "@/components/ProductList";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
     <main className="font-sans text-gray-800">
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] bg-gradient-to-br from-pink-200 via-purple-200 to-indigo-200 flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] flex items-center justify-center bg-amber-500overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/hero1.jpg"
@@ -23,12 +24,12 @@ const About = () => {
           <p className="text-lg md:text-2xl text-gray-800 animate-fadeIn delay-200">
             Discover our latest collection and elevate your wardrobe today.
           </p>
-          <a
+          <Link
             href="/shop"
             className="mt-6 inline-block px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-semibold hover:scale-105 transition"
           >
             Shop Now
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -61,6 +62,31 @@ const About = () => {
           </div>
         </div>
       </section>
+
+       <section className="relative bg-gradient-to-r from-emerald-400 to-sky-400 text-white py-20 px-6">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4">
+          Ready to Get Started?
+        </h2>
+        <p className="text-lg md:text-2xl mb-8">
+          Explore our latest collections and find pieces you’ll love. Fashion that fits your lifestyle, your budget, and your personality.
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            href="/shop"
+            className="bg-white text-purple-600 font-semibold px-8 py-4 rounded-full shadow-lg hover:scale-105 transition"
+          >
+            Shop Now
+          </Link>
+          <Link
+            href="/signup"
+            className="border border-white text-white font-semibold px-8 py-4 rounded-full hover:bg-white hover:text-purple-600 transition"
+          >
+            Join Now
+          </Link>
+        </div>
+      </div>
+    </section>
 
       {/* Featured Products Section */}
       <section className="py-20 bg-gray-50">
