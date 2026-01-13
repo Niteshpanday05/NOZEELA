@@ -16,6 +16,7 @@ export const wixClientServer = async () => {
       products,
       collections,
       
+      
     //   orders,
     //   members,
     },
