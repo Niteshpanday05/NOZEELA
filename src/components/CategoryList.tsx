@@ -1,11 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import { wixClientServer } from "@/lib/wixClientServer";
+import { createClient } from '@wix/sdk';
+import { products, collections } from '@wix/stores';
+
 
 const CategoryList = async () => {
   const wixClient = await wixClientServer();
 
-  const cats = await wixClient.collections.queryCollections().find();
+  const cats = await wixClient.collections.queryCollections().find()
+
 
 
   return (
