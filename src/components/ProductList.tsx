@@ -25,6 +25,8 @@ const ProductList = async ({ categoryId, limit }: Props) => {
 
   const res = await query.find();
 
+  console.log(res.items[0].price)
+
   return (
     <div className="mt-12 flex gap-x-8 gap-y-16 justify-between flex-wrap">
       {res.items.map((product: products.Product) => (
