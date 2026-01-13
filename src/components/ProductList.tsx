@@ -13,7 +13,10 @@ type Props = {
 const ProductList = async ({ categoryId, limit }: Props) => {
   const wixClient = await wixClientServer();
 
-  //  Query products
+ 
+
+
+//  Query products
   let query = wixClient.products.queryProducts().limit(limit ?? PRODUCT_PER_PAGE);
 
   //  Filter by category custom field if provided
@@ -23,7 +26,7 @@ const ProductList = async ({ categoryId, limit }: Props) => {
 
   }
 
-  const res = await query.find();
+  const res = await query.find(); 
 
   console.log(res.items[0].price)
 

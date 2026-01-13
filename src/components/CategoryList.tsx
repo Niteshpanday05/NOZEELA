@@ -7,7 +7,6 @@ const CategoryList = async () => {
 
   const cats = await wixClient.collections.queryCollections().find();
 
-  
 
   return (
     <div className="px-4 overflow-x-scroll no-scrollbar">

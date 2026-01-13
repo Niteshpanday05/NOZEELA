@@ -10,7 +10,7 @@
   "dependencies": {
     "@wix/data": "^1.0.373",
     "@wix/sdk": "^1.21.2",
-    "@wix/stores": "^1.0.622",
+    "@wix/stores": "^1.0.633",
     "framer-motion": "^12.26.1",
     "js-cookie": "^3.0.5",
     "next": "16.0.10",
